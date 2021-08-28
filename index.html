@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Bold-BS4-CSS-Image-Slider.css">
     <link rel="stylesheet" href="assets/css/dh-card-image-left-dark.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css">
@@ -28,7 +29,7 @@
                     <li class="nav-item"><a class="nav-link navbar-link text-uppercase" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link navbar-link text-uppercase" href="historical.html">History</a></li>
                     <li class="nav-item"><a class="nav-link navbar-link text-uppercase" href="activities.html">Activities</a></li>
-                    <li class="nav-item"><a class="nav-link navbar-link text-uppercase" href="projects-with-sidebar.html">Trivias</a></li>
+                    <li class="nav-item"><a class="nav-link navbar-link text-uppercase" href="trivias.html">Trivias</a></li>
                     <li class="nav-item"><a class="nav-link navbar-link text-uppercase" href="about.html">About</a></li>
                 </ul>
             </div>
@@ -40,7 +41,7 @@
                 <div class="container">
                     <h1 class="text-white text-center mb-3" style="text-shadow: 5px 5px 5px  #d3d3d3;">76<sup>th</sup></h1>
                     <div class="d-flex justify-content-center align-items-center">
-                        <h2 class="text-white text-center d-inline gradient-theme px-5 pb-1 hoverable" style="border-radius: 30px">Indonesian Independence Day</h2>
+                        <h2 class="text-white text-center d-inline gradient-theme px-5 pb-2 pt-1 hoverable" style="border-radius: 30px">Indonesian Independence Day</h2>
                     </div>
                     <hr style="border: 2px solid white; opacity: 0.75;">
                 </div>
@@ -53,9 +54,15 @@
                 <div class="simple-slider">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide" style="background: url(&quot;https://cdn.bootstrapstudio.io/placeholders/1400x800.png&quot;) center center / cover no-repeat;"></div>
-                            <div class="swiper-slide" style="background: url(&quot;https://cdn.bootstrapstudio.io/placeholders/1400x800.png&quot;) center center / cover no-repeat;"></div>
-                            <div class="swiper-slide" style="background: url(&quot;https://cdn.bootstrapstudio.io/placeholders/1400x800.png&quot;) center center / cover no-repeat;"></div>
+                            <div class="swiper-slide d-flex justify-content-center align-items-end" style="background: url(&quot;assets/img/home/slideshow-2.png&quot;) center center / cover no-repeat;">
+                                <h4 class="mb-5 text-white fw-bold" style="text-shadow: 5px 5px 5px  #d3d3d3;">Unique Activities</h4>
+                            </div>
+                            <div class="swiper-slide d-flex justify-content-center align-items-end" style="background: url(&quot;assets/img/home/slideshow-1.png&quot;) center center / cover no-repeat;">
+                                <h4 class="mb-5 text-white fw-bold" style="text-shadow: 5px 5px 5px  #d3d3d3;">Historical Photos</h4>
+                            </div>
+                            <div class="swiper-slide d-flex justify-content-center align-items-end" style="background: url(&quot;assets/img/home/slideshow-3.png&quot;) center center / cover no-repeat;">
+                                <h4 class="mb-5 text-white fw-bold" style="text-shadow: 5px 5px 5px  #d3d3d3;">Trivias and Fun Facts</h4>
+                            </div>
                         </div>
                         <div class="swiper-pagination"></div>
                         <div class="swiper-button-prev"></div>
@@ -65,13 +72,13 @@
             </div>
         </section>
     </main>
-    <section class="portfolio-block website gradient-theme">
+    <section class="portfolio-block gradient-theme">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-12 col-lg-5 offset-lg-1 text" id="home-text">
+                <div class="col-md-12 col-lg-5 offset-lg-1 text-end align-self-end text" id="home-text">
                     <h3 class="text-white">17<sup>th</sup> of August 1945</h3>
                     <p class="text-white">The day Indonesian declared their independence, forming what's now known as the Republic of Indonesia.</p>
-                    <p class="text-white">See historical photos dating back decades ago.</p><button class="btn btn-primary button-theme" type="button"><a class="text-white text-decoration-none fw-bold px-4" href="historical.html" style="padding: inherit;">Go</a></button>
+                    <p class="text-white">See historical photos dating back decades ago.</p><button class="btn btn-primary button-theme mb-4" type="button"><a class="text-white text-decoration-none fw-bold px-4" href="historical.html" style="padding: inherit;">Go</a></button>
                 </div>
                 <div class="col-md-12 col-lg-5">
                     <div class="portfolio-laptop-mockup hover-twist">
@@ -84,10 +91,30 @@
             </div>
         </div>
     </section>
+    <section class="portfolio-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mb-3">
+                    <div class="accordian">
+                        <ul>
+                            <li><a href="#"><img src="assets/img/home/home-1.png"></a></li>
+                            <li><a href="#"><img src="assets/img/home/home-2.png"></a></li>
+                            <li><a href="#"><img src="assets/img/home/home-3.png"></a></li>
+                            <li><a href="#"><img src="assets/img/home/home-4.png"></a></li>
+                            <li><a href="#"><img src="assets/img/home/home-5.png"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 text px-5 py-3 text-end align-self-center">
+                    <h3 class="text-start">Explore Indonesia.</h3>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="page-footer">
         <div class="container">
             <div class="social-icons"><a href="https://www.linkedin.com/in/putu-krisna-andyartha/"><i class="icon ion-social-linkedin"></i></a><a href="https://github.com/putukrisna6"><i class="icon ion-social-github"></i></a><a href="https://twitter.com/PutuKrisna15"><i class="icon ion-social-twitter"></i></a>
-                <h6 class="text-muted pt-1"><br>Made in 2021 by Putu Krisna Andyartha</h6>
+                <h6 class="text-muted pt-1"><br>Made in 2021 by Putu Krisna Andyartha<br><br>All pictures belong to their respective owners</h6>
             </div>
         </div>
     </footer><a id="scroll-to-top" title="Scroll to top" href="#"><i class="fas fa-angle-up"></i></a>
