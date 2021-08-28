@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Trivias</title>
+    <title>This Year</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor">
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    
 </head>
 
 <body>
@@ -34,29 +35,29 @@
         <section class="portfolio-block projects-with-sidebar">
             <div class="container">
                 <div class="heading">
-                    <h2>Trivias</h2>
+                    <h2>This Year's Independence Day</h2>
                 </div>
                 <div class="row">
                     <div class="col-md-3">
-                        <ul class="list-unstyled sidebar">
-                            <li><a class="active" href="#">All</a></li>
-                            <li><a href="#">Bootstrap</a></li>
-                            <li><a href="#">Clean</a></li>
-                            <li><a href="#">Colors</a></li>
-                            <li><a href="#">Portfolio</a></li>
+                        <ul class="list-unstyled sidebar" id="filter">
+                            <li><a class="all active" href="#">All</a></li>
+                            <li><a class="logo" href="#">Logos</a></li>
+                            <li><a class="president" href="#">President</a></li>
+                            <li><a class="af" href="#">Air Force</a></li>
+                            <li><a class="cr" href="#">Ceremony</a></li>
                         </ul>
                     </div>
                     <div class="col-md-9">
-                        <div class="row">
-                            <div class="col-md-6 col-lg-4 project-sidebar-card"><a href="#"><img class="img-fluid image scale-on-hover" src="assets/img/76/76-1.png"></a></div>
-                            <div class="col-md-6 col-lg-4 project-sidebar-card"><a href="#"><img class="img-fluid image scale-on-hover" src="assets/img/nature/image2.jpg"></a></div>
-                            <div class="col-md-6 col-lg-4 project-sidebar-card"><a href="#"><img class="img-fluid image scale-on-hover" src="assets/img/nature/image3.jpg"></a></div>
-                            <div class="col-md-6 col-lg-4 project-sidebar-card"><a href="#"><img class="img-fluid image scale-on-hover" src="assets/img/nature/image4.jpg"></a></div>
-                            <div class="col-md-6 col-lg-4 project-sidebar-card"><a href="#"><img class="img-fluid image scale-on-hover" src="assets/img/nature/image5.jpg"></a></div>
-                            <div class="col-md-6 col-lg-4 project-sidebar-card"><a href="#"><img class="img-fluid image scale-on-hover" src="assets/img/nature/image6.jpg"></a></div>
-                            <div class="col-md-6 col-lg-4 project-sidebar-card"><a href="#"><img class="img-fluid image scale-on-hover" src="assets/img/nature/image7.jpg"></a></div>
-                            <div class="col-md-6 col-lg-4 project-sidebar-card"><a href="#"><img class="img-fluid image scale-on-hover" src="assets/img/nature/image8.jpg"></a></div>
-                            <div class="col-md-6 col-lg-4 project-sidebar-card"><a href="#"><img class="img-fluid image scale-on-hover" src="assets/img/nature/image9.jpg"></a></div>
+                        <div class="row" id="posts">
+                            <div class="col-md-6 col-lg-4 project-sidebar-card post all logo"><a href="#"><img class="img-fluid image scale-on-hover" src="assets/img/76/76-1.png"></a></div>
+                            <div class="col-md-6 col-lg-4 project-sidebar-card post all logo"><a href="#"><img class="img-fluid image scale-on-hover" src="assets/img/76/76-2.png"></a></div>
+                            <div class="col-md-6 col-lg-4 project-sidebar-card post all president"><a href="#"><img class="img-fluid image scale-on-hover" src="assets/img/76/76-3.png"></a></div>
+                            <div class="col-md-6 col-lg-4 project-sidebar-card post all president"><a href="#"><img class="img-fluid image scale-on-hover" src="assets/img/76/76-4.png"></a></div>
+                            <div class="col-md-6 col-lg-4 project-sidebar-card post all af"><a href="#"><img class="img-fluid image scale-on-hover" src="assets/img/76/76-5.png"></a></div>
+                            <div class="col-md-6 col-lg-4 project-sidebar-card post all af"><a href="#"><img class="img-fluid image scale-on-hover" src="assets/img/76/76-6.png"></a></div>
+                            <div class="col-md-6 col-lg-4 project-sidebar-card post all af"><a href="#"><img class="img-fluid image scale-on-hover" src="assets/img/76/76-7.png"></a></div>
+                            <div class="col-md-6 col-lg-4 project-sidebar-card post all cr"><a href="#"><img class="img-fluid image scale-on-hover" src="assets/img/76/76-8.png"></a></div>
+                            <div class="col-md-6 col-lg-4 project-sidebar-card post all cr"><a href="#"><img class="img-fluid image scale-on-hover" src="assets/img/76/76-9.png"></a></div>
                         </div>
                     </div>
                 </div>
@@ -76,6 +77,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
     <script src="assets/js/Simple-Slider.js"></script>
     <script src="assets/js/theme.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $("#filter a").each(function() {
+            $("a").click(function() {
+                $("a").removeClass("active");
+                $(this).addClass("active");
+            });
+
+            $(this).on("click", function() {
+                var filtertag = $(this).attr('class').split(' ');
+                $('.post').show();
+                $('.post:not(.' + filtertag[0] + ')').hide();
+            });
+        });
+    </script>
 </body>
 
 </html>
