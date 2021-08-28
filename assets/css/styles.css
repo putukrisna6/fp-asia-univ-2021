@@ -104,3 +104,242 @@ h3 {
   border-color: black;
 }
 
+.simple-slider .swiper-slide {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.simple-slider .swiper-button-next, .simple-slider .swiper-button-prev {
+  width: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media (max-width:767px) {
+  .simple-slider .swiper-button-next, .simple-slider .swiper-button-prev {
+    display: none;
+  }
+}
+
+@media (max-width:767px) {
+  .simple-slider .swiper-slide {
+    height: 360px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#scroll-to-top {
+  background-color: rgba(19,20,25,0.6);
+  width: 44px;
+  height: 40px;
+  position: fixed;
+  bottom: 0;
+  right: 40px;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+#scroll-to-top i {
+  color: #fff;
+  font-size: 22px;
+  line-height: 44px;
+}
+
+.profile-back {
+  height: 150px;
+  margin-bottom: -75px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.profile-card {
+  text-align: center;
+  margin-bottom: 15px;
+  border: 1px solid #231F20;
+  border-radius: 10px;
+}
+
+.profile-name {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 100px;
+  max-width: 300px;
+  margin: 0 auto 10px auto;
+}
+
+.profile-card .social-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.profile-card .social-list li {
+  display: inline;
+  margin: 0 5px;
+}
+
+.profile-card .social-list li i {
+  background-color: #9b1f1f;
+  color: #fff;
+  padding: 10px 11px;
+  border-radius: 100%;
+}
+
+.photo-card {
+  background-color: #231F20;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 700px) {
+  .photo-card {
+    flex-direction: row;
+  }
+}
+
+.photo-background {
+  background-position: center;
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  min-height: 250px;
+}
+
+@media screen and (min-width: 700px) {
+  .photo-background {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    min-height: none;
+    width: 50%;
+  }
+}
+
+.photo-details {
+  padding: 2.1875em 5%;
+}
+
+@media screen and (min-width: 700px) {
+  .photo-details {
+    width: 50%;
+  }
+}
+
+.photo-details h1, .photo-details h4 {
+  color: #fff;
+  font-weight: 500;
+  margin: 0;
+}
+
+.photo-details h1 {
+  font-size: 125%;
+  line-height: 1;
+  margin-bottom: 0.35em;
+}
+
+.photo-tags ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 87.5%;
+  margin-top: 0.35em;
+  text-transform: lowercase;
+}
+
+.photo-tags li {
+  margin: 0 0.35em 0.35em 0;
+}
+
+.photo-tags a {
+  background-color: #191e20;
+  border-radius: 50px;
+  color: #fff;
+  display: block;
+  padding: 0.3125em 1.25em;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.photo-tags a:hover, .photo-tags a:focus {
+  color: #e37544;
+}
+
+.photo-details p {
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.accordian {
+  overflow: hidden;
+  margin: auto;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+}
+
+.accordian ul {
+  width: 1200px;
+}
+
+.accordian li {
+  position: relative;
+  display: block;
+  width: 160px;
+  float: left;
+  border-left: 1px solid #888;
+  box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+
+.accordian ul:hover li {
+  width: 40px;
+}
+
+.accordian ul li:hover {
+  width: 640px;
+}
+
+.accordian li img {
+  display: block;
+}
+
+.image_title {
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 640px;
+  height: 60px;
+}
+
+
+
